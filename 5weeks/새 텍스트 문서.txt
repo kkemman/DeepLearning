@@ -1,0 +1,8 @@
+1. DSA데이터에서 sitting(noraml)과 jumping(abnoraml)만 남김
+2. 두개 activity를 섞어서 train과 test로 구분
+3. train을 다시 training과 valid로 구분
+4. training과 valid에서 jumping 데이터를 삭제 (sitting을 정상데이터로 사용)
+5. 오토인코더로 valid를 목표로 training 학습
+6. sitting으로 학습된 모델을 가지고, 오토인코딩에 넣어서 Reconstruction Error(입력과 출력 차이)를 구함
+7. 적당한 threshold값으로 분류수행
+8. accuracy를 구함
